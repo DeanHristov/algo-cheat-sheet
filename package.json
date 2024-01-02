@@ -1,0 +1,36 @@
+{
+  "name": "algo-cheat-sheet",
+  "description": "",
+  "author": "D. Hristov <dean.hristovv@gmail.com>",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "keywords": [],
+  "license": "MIT",
+  "scripts": {
+    "start": "npx nodemon",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "test": "jest --no-cache",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-prettier": "^5.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.2",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1",
+    "whatwg-fetch": "^3.6.20",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
