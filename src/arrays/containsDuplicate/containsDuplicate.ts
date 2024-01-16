@@ -31,7 +31,7 @@ export const containsDuplicateBruteForce = (array: number[]): boolean => {
  * @param array An array of numbers
  */
 export const containsDuplicate = (array: number[]): boolean => {
-  const store = new Set<number>();
+  const store: Set<number> = new Set<number>();
 
   for (const item of array) {
     if (store.has(item)) return true;
@@ -40,6 +40,18 @@ export const containsDuplicate = (array: number[]): boolean => {
   }
 
   return false;
+};
+
+/**
+ * @description
+ *    The same approach like previous one (containsDuplicate(...)) but here we are using less code!
+ * BIG-O() analysis:
+ *    Time O(n) | Space O(n) - Where the "n" is the length of the input array
+ */
+export const containsDuplicateLess = (array: number[]): boolean => {
+  const store: Set<number> = new Set([...array]);
+
+  return store.size !== array.length;
 };
 
 /**
