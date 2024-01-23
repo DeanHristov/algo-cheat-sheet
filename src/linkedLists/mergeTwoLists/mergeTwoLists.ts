@@ -1,34 +1,39 @@
-import SingleListNode from '../SingleListNode';
+class ListNode {
+  val: number;
+  next: ListNode | null;
+
+  constructor(val?: number, next?: ListNode | null) {
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
+  }
+}
 
 /**
+ * @see https://leetcode.com/problems/merge-two-sorted-lists/
  * @description
  * So, the majority of work is already done by the requirements because the input always gonna be two sorted lists.
  * We have to create one more "dummy" linked list in the begging because first it will cover all edge cases and holding reference
  * to the final representation of the output list and secondly, on each iteration,
  * we are moving the head of each list with one step further. Finally, we are returning the dummy list
  *
- * The idea is to use a temporary dummy node at the start of the result list.
- * The pointer Tail always points to the last node in the result list, so appending new nodes is easy.
- *
  * BIG-O() analysis:
  * Time: O(n + m) | Space: 0(n + m) - where the "n" is length of the first list and "m" is length of the second list
  *
- * @see https://leetcode.com/problems/merge-two-sorted-lists/
  * @param list1 Single linked list
  * @param list2 Single linked list
  */
-export const mergeTwoLists = (
-  list1: SingleListNode | null,
-  list2: SingleListNode | null,
-): SingleListNode | null => {
+const mergeTwoLists = (
+  list1: ListNode | null,
+  list2: ListNode | null,
+): ListNode | null => {
   if (list1 === null) return list2;
   if (list2 === null) return list1;
 
   // Always keeping reference to the head of the output list
-  const dummyList: SingleListNode = new SingleListNode();
+  const dummyList: ListNode = new ListNode();
 
   // Keeping reference to the tail of the list
-  let currentNode: SingleListNode = dummyList;
+  let currentNode: ListNode = dummyList;
 
   while (list1?.val && list2?.val) {
     if (list1.val < list2.val) {
@@ -47,3 +52,5 @@ export const mergeTwoLists = (
 
   return dummyList.next;
 };
+
+export { mergeTwoLists, ListNode };
