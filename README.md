@@ -91,6 +91,7 @@ on [NPM scripts](https://docs.npmjs.com/misc/scripts).
 - [Sorting algorithms - Categories](https://en.wikipedia.org/wiki/Category:Sorting_algorithms)
 - [In-place algorithm](https://en.wikipedia.org/wiki/In-place_algorithm)
 - [LeetCode Patterns](https://seanprashad.com/leetcode-patterns/)
+- [Blind 75 LeetCode Questions](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 
 ## Made by
 
