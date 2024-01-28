@@ -79,7 +79,6 @@ on [NPM scripts](https://docs.npmjs.com/misc/scripts).
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Computer Memory](https://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node55.html)
-- [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
 - [BIG-O Cheat sheet](https://www.bigocheatsheet.com/)
 - [WIKI - List of data structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 - [Hash table](https://en.wikipedia.org/wiki/Hash_table#:~:text=A%20hash%20table%20uses%20a,the%20corresponding%20value%20is%20stored)
@@ -91,8 +90,10 @@ on [NPM scripts](https://docs.npmjs.com/misc/scripts).
 - [Sorting algorithms - Categories](https://en.wikipedia.org/wiki/Category:Sorting_algorithms)
 - [In-place algorithm](https://en.wikipedia.org/wiki/In-place_algorithm)
 - [LeetCode Patterns](https://seanprashad.com/leetcode-patterns/)
-- [LeetCode - Blind 75 Questions](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
+- [Blind 75 Questions](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
+- [Blind 75 Questions - LeetCode](https://leetcode.com/studyplan/leetcode-75/)
 - [LeetCode - Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)
+- [30 Days of JavaScript - LeetCode](https://leetcode.com/studyplan/30-days-of-javascript/)
 
 ## Made by
 
