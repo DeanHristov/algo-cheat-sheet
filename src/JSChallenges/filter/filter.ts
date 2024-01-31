@@ -1,6 +1,6 @@
 type Fn = (n: number, i: number) => any;
 
-//@see: https://leetcode.com/problems/filter-elements-from-array/description/?envType=study-plan-v2&envId=30-days-of-javascript
+//@see: https://leetcode.com/problems/filter-elements-from-array
 const filter = (arr: number[], fn: Fn): number[] => {
   const outputArray: number[] = [];
 

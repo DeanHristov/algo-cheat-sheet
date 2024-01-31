@@ -1,13 +1,13 @@
-import { memoize } from "./memoize";
+import { memoize } from './memoize';
 
-describe("30 Days of JavaScript -> 2623. Memoize", () => {
-  it("Should be able to calc a sum", () => {
+describe('30 Days of JavaScript -> 2623. Memoize', () => {
+  it('Should be able to calc a sum', () => {
     const memoizedFn = memoize((a, b) => a + b);
 
     expect(memoizedFn(2, 3)).toEqual(5);
   });
 
-  it("Should be able to return the memoized version of the result", () => {
+  it('Should be able to return the memoized version of the result', () => {
     let callCount = 0;
     const memoizedFn = memoize((a, b) => {
       callCount += 1;

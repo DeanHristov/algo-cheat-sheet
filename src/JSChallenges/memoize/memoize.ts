@@ -1,7 +1,7 @@
 type Fn = (...params: number[]) => number;
 
 /**
- * @see: https://leetcode.com/problems/memoize/description/?envType=study-plan-v2&envId=30-days-of-javascript
+ * @see: https://leetcode.com/problems/memoize
  */
 const memoize = (fn: Fn): Fn => {
   const cache: Record<string, number> = {};

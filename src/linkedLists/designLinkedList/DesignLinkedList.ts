@@ -1,2 +1,1 @@
-export default class DesignLinkedList {
-}
+export default class DesignLinkedList {}

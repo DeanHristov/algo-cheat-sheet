@@ -1,7 +1,7 @@
-import { createCounter } from "./createCounter";
+import { createCounter } from './createCounter';
 
-describe("30 Days of JavaScript -> 2620. Counter", () => {
-  it("Should be able to count properly", () => {
+describe('30 Days of JavaScript -> 2620. Counter', () => {
+  it('Should be able to count properly', () => {
     const counter = createCounter(10);
     let result: number = counter();
 
