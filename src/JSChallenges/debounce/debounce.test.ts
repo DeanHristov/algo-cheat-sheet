@@ -9,7 +9,7 @@ describe('30 Days of JavaScript -> 2627. Debounce', () => {
     const log = debounce(mockCallBack, 100);
 
     log(1);
-    expect(mockCallBack).not.toBeCalled();
+    expect(mockCallBack).not.toHaveBeenCalled();
   });
 
   it('Should be able to call the function', () => {
@@ -19,8 +19,8 @@ describe('30 Days of JavaScript -> 2627. Debounce', () => {
     log(1);
     jest.runAllTimers();
 
-    expect(mockCallBack).toBeCalled();
-    expect(mockCallBack).toBeCalledWith(1);
+    expect(mockCallBack).toHaveBeenCalled();
+    expect(mockCallBack).toHaveBeenCalledWith(1);
   });
 
   it('Should be able to call the function once', () => {
@@ -32,7 +32,7 @@ describe('30 Days of JavaScript -> 2627. Debounce', () => {
     log(3);
     jest.runAllTimers();
 
-    expect(mockCallBack).toBeCalledTimes(1);
-    expect(mockCallBack).toBeCalledWith(3);
+    expect(mockCallBack).toHaveBeenCalledTimes(1);
+    expect(mockCallBack).toHaveBeenCalledWith(3);
   });
 });
